@@ -1,0 +1,102 @@
+.create-list{
+    max-width: 400px;
+    margin: 0 auto;  
+}
+
+.featured-container .create-list{
+    max-width: 98%;
+    margin: 0 auto;  
+}
+.featured-container .add-venue{
+    background: #f8f8f8;
+    padding: 6%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.featured-container .add-venueSetting{
+    padding: 2%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.add-venueSetting  formLabel
+{
+    margin:0px !important; 
+}
+
+.add-venueSetting .venue-ditels,.add-venueSetting .venue-ditels h1
+{   
+    margin-top:0px !important; 
+}
+
+.featured-list-btn,.regular-list-btn{
+    border: 2px solid #979797;
+    padding: 10px 10px;
+    background: none;
+    margin: 5px 5px;
+    line-height: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 122px;
+    font-size: 16px;
+    font-weight:500;
+    color:#A6A6A6;
+}
+.btn-active:hover,.btn-active:focus{
+    border: 2px solid #00CDD5;
+    color:#00CDD5;
+}
+
+ 
+
+.list-type{
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 400;
+    color:#A6A6A6;
+}
+.listrow{
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 400;
+    color:#A6A6A6;
+   height: 60px;
+   background-color: #f3f3f3;
+}
+a:link {
+    text-decoration: none;
+    position: relative;
+    height: 100%;
+}
+
+a {
+    color: #000;
+}
+.listrowwhite{
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 400;
+    color:#A6A6A6;
+    height: 60px;
+   background-color: #fff;
+}
+@media only screen and (max-width: 667px) {
+    .create-list,.add-venue{ 
+        padding:10px!important;
+    }
+
+}
+ 
+.err{
+    font-family: gt_walsheim_proregular;
+    background-color: rgba(226, 15, 15, 0.87);
+    padding: 0px 24px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 2px;
+    max-width: 568px;
+    min-width: 288px;
+    width: auto;
+    flex-grow: 0;
+}

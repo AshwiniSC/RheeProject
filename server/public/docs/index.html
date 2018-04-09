@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test REST API Documentation</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="api-doc-generator.min.css">
+</head>
+<body>
+  <main>
+    <nav class="navigation">
+      <section class="container">
+        <div class="row">
+          <div class="column">
+            <div class="title">Test REST API Documentation</div>
+          </div>
+        </div>
+      </section>
+    </nav>
+
+    <section class="container">
+      <div class="row">
+        <div class="column">
+          <div class="sections">
+            <ul>
+              <li>
+                <a href="#Accounts">Accounts</a>
+              </li>
+              <li>
+                <a href="#Files">Files</a>
+              </li>
+              <li>
+                <a href="#Subjects">Subjects</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="row">
+        <div class="column">
+          <div class="section">
+            <div class="section-header">
+              <div class="section-title">
+                <a name="Accounts" class="section-toggle">Accounts</a>
+              </div>
+
+              <div class="actions">
+                <a class="section-toggle">Show/hide</a>
+                <a class="hide-description">List Operations</a>
+                <a class="show-description">Expand Operations</a>
+              </div>
+            </div>
+
+            <div class="endpoints">
+              <div class="endpoint post">
+                <div class="address toggle-description">
+                  <span class="label">post</span><span class="url">/api/v1/registration</span>
+                </div>
+
+                <div class="description hidden">
+                  <p>Registration</p>
+
+                  <table>
+                    <thead>
+                    <tr>
+                      <th>Parameter</th>
+                      <th>Type</th>
+                      <th>Required</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>userName</td>
+                      <td>string</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <td>nickName</td>
+                      <td>string</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <td>schoolName</td>
+                      <td>string</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <td>email</td>
+                      <td>email</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <td>password</td>
+                      <td>password</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <td>role(&#x27;student/teacher&#x27;)</td>
+                      <td>string</td>
+                      <td>true</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="endpoint post">
+                <div class="address toggle-description">
+                  <span class="label">post</span><span class="url">/api/v1/updateRegistration</span>
+                </div>
+
+                <div class="description hidden">
+                  <p>Update Registration</p>
+
+                  <table>
+                    <thead>
+                    <tr>
+                      <th>Parameter</th>
+                      <th>Type</th>
+                      <th>Required</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>userName</td>
+                      <td>string</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <td>nickName</td>
+                      <td>string</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <td>schoolName</td>
+                      <td>string</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <td>email</td>
+                      <td>email</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <td>_id</td>
+                      <td>ObjectId</td>
+                      <td>true</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="endpoint post">
+                <div class="address toggle-description">
+                  <span class="label">post</span><span class="url">/api/v1/login</span>
+                </div>
+
+                <div class="description hidden">
+                  <p>Login</p>
+
+                  <table>
+                    <thead>
+                    <tr>
+                      <th>Parameter</th>
+                      <th>Type</th>
+                      <th>Required</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>email</td>
+                      <td>email</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <td>password</td>
+                      <td>password</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <td>role(&#x27;student/teacher&#x27;)</td>
+                      <td>string</td>
+                      <td>true</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="row">
+        <div class="column">
+          <div class="section">
+            <div class="section-header">
+              <div class="section-title">
+                <a name="Files" class="section-toggle">Files</a>
+              </div>
+
+              <div class="actions">
+                <a class="section-toggle">Show/hide</a>
+                <a class="hide-description">List Operations</a>
+                <a class="show-description">Expand Operations</a>
+              </div>
+            </div>
+
+            <div class="endpoints">
+              <div class="endpoint post">
+                <div class="address toggle-description">
+                  <span class="label">post</span><span class="url">/api/v1/addFiles</span>
+                </div>
+
+                <div class="description hidden">
+                  <p>Add Files</p>
+
+                  <table>
+                    <thead>
+                    <tr>
+                      <th>Parameter</th>
+                      <th>Type</th>
+                      <th>Required</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>filetName</td>
+                      <td>string</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <td>fileFeature</td>
+                      <td>string</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <td>links</td>
+                      <td>array</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <td>comment</td>
+                      <td>string</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <td>subjectId</td>
+                      <td>objectId</td>
+                      <td>true</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="endpoint post">
+                <div class="address toggle-description">
+                  <span class="label">post</span><span class="url">/api/v1/updateFiles</span>
+                </div>
+
+                <div class="description hidden">
+                  <p>Update Files</p>
+
+                  <table>
+                    <thead>
+                    <tr>
+                      <th>Parameter</th>
+                      <th>Type</th>
+                      <th>Required</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>_id</td>
+                      <td>string</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <td>filetName</td>
+                      <td>string</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <td>fileFeature</td>
+                      <td>string</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <td>links</td>
+                      <td>array</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <td>comment</td>
+                      <td>string</td>
+                      <td>true</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="endpoint get">
+                <div class="address toggle-description">
+                  <span class="label">get</span><span class="url">/api/v1/getFiles/:id</span>
+                </div>
+
+                <div class="description hidden">
+                  <p>Fetch Each Subject's Files</p>
+
+                  <table>
+                    <thead>
+                    <tr>
+                      <th>Parameter</th>
+                      <th>Type</th>
+                      <th>Required</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>subjectId</td>
+                      <td>ObjectId</td>
+                      <td>true</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="endpoint delete">
+                <div class="address toggle-description">
+                  <span class="label">delete</span><span class="url">/api/v1/deleteFile/:id</span>
+                </div>
+
+                <div class="description hidden">
+                  <p>Remove File</p>
+
+                  <table>
+                    <thead>
+                    <tr>
+                      <th>Parameter</th>
+                      <th>Type</th>
+                      <th>Required</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>_id</td>
+                      <td>ObjectId</td>
+                      <td>true</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="row">
+        <div class="column">
+          <div class="section">
+            <div class="section-header">
+              <div class="section-title">
+                <a name="Subjects" class="section-toggle">Subjects</a>
+              </div>
+
+              <div class="actions">
+                <a class="section-toggle">Show/hide</a>
+                <a class="hide-description">List Operations</a>
+                <a class="show-description">Expand Operations</a>
+              </div>
+            </div>
+
+            <div class="endpoints">
+              <div class="endpoint post">
+                <div class="address toggle-description">
+                  <span class="label">post</span><span class="url">/api/v1/addSubject</span>
+                </div>
+
+                <div class="description hidden">
+                  <p>Add Subject</p>
+
+                  <table>
+                    <thead>
+                    <tr>
+                      <th>Parameter</th>
+                      <th>Type</th>
+                      <th>Required</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>subjectName</td>
+                      <td>string</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <td>subjectCode</td>
+                      <td>string</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <td>createdBy</td>
+                      <td>string</td>
+                      <td>true</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="endpoint post">
+                <div class="address toggle-description">
+                  <span class="label">post</span><span class="url">/api/v1/updateSubject</span>
+                </div>
+
+                <div class="description hidden">
+                  <p>Update Subject</p>
+
+                  <table>
+                    <thead>
+                    <tr>
+                      <th>Parameter</th>
+                      <th>Type</th>
+                      <th>Required</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>subjectName</td>
+                      <td>string</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <td>subjectCode</td>
+                      <td>string</td>
+                      <td>true</td>
+                    </tr>
+                    <tr>
+                      <td>_id</td>
+                      <td>ObjectId</td>
+                      <td>true</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="endpoint get">
+                <div class="address toggle-description">
+                  <span class="label">get</span><span class="url">/api/v1/getSubjects/:id</span>
+                </div>
+
+                <div class="description hidden">
+                  <p>Get Subject Details for register user</p>
+
+                  <table>
+                    <thead>
+                    <tr>
+                      <th>Parameter</th>
+                      <th>Type</th>
+                      <th>Required</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>_id</td>
+                      <td>ObjectId</td>
+                      <td>true</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="endpoint delete">
+                <div class="address toggle-description">
+                  <span class="label">delete</span><span class="url">/api/v1/deleteSubject/:id</span>
+                </div>
+
+                <div class="description hidden">
+                  <p>Delete Subject</p>
+
+                  <table>
+                    <thead>
+                    <tr>
+                      <th>Parameter</th>
+                      <th>Type</th>
+                      <th>Required</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                      <td>_id</td>
+                      <td>ObjectId</td>
+                      <td>true</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script type="text/javascript" src="api-doc-generator.min.js"></script>
+</body>
+</html>

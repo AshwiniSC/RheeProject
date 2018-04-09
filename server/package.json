@@ -1,0 +1,47 @@
+{
+  "name": "Test",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "babel-node ./bin/www",
+    "apidoc": "api-doc-generator --title Test API Docs --input routes/apis.js --output public/docs"
+  },
+  "other": {
+    "start": "forever start --minUptime 1000 --spinSleepTime 1000 ./bin/www",
+    "stop": "forever stop ./bin/www"
+  },
+  "dependencies": {
+    "access-token": "^0.2.2",
+    "api-doc-generator": "0.0.2",
+    "async": "^1.5.2",
+    "aws-sdk": "^2.82.0",
+    "babel-cli": "^6.26.0",
+    "bcrypt": "^0.8.5",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "~1.15.1",
+    "compression": "^1.7.2",
+    "cryptr": "^3.0.0",
+    "debug": "~2.2.0",
+    "dotenv": "^5.0.1",
+    "express": "~4.13.4",
+    "express-joi": "^0.3.1",
+    "immutable": "^3.8.2",
+    "install": "^0.10.2",
+    "jade": "~1.11.0",
+    "joi-objectid": "^2.0.0",
+    "jsonwebtoken": "^7.4.1",
+    "minifier": "^0.8.0",
+    "mongoose": "^4.1.0",
+    "mongoose-easy-auto-increment": "^1.0.1",
+    "morgan": "~1.7.0",
+    "node-run-cmd": "^1.0.1",
+    "npm": "^5.6.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
+  }
+}
